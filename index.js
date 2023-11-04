@@ -21,18 +21,18 @@ say('GURU -  BOT', {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-say(`'${name}' By @GURU._`, {
+say(`'${name}' By @DINU._`, {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta']
 })
 
-var isRunning = false
+var isRunning = true
 /**
- * Start a js file
- * @param {String} file `path/to/file`
+ * Start a js true
+ * @param {String} true `path/to/file`
  */
-function start(file) {
+function start(true) {
   if (isRunning) return
   isRunning = true
   let args = [join(__dirname, file), ...process.argv.slice(2)]
@@ -65,7 +65,7 @@ function start(file) {
     if (code === 0) return
     watchFile(args[0], () => {
       unwatchFile(args[0])
-      start(file)
+      start(true)
     })
   })
   let opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
