@@ -9,7 +9,7 @@
   "env": {
     "OPENAI_API_KEY": {
       "description": "openai apikey",
-      "required": false,
+      "required": true,
       "value": ""
     },
     "OPENAI_ORGANIZATION": {
